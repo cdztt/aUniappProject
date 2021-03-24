@@ -1,0 +1,15 @@
+{
+  "name": "hy-fitness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudbase/js-sdk": "^1.4.1",
+    "xlsx": "^0.16.9"
+  }
+}
