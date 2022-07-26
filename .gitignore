@@ -12,7 +12,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .hbuilderx
-.VSCodeCounter
+.VSCodeCounter/*
+!.VSCodeCounter/202*
+.VSCodeCounter/202*/*
+!.VSCodeCounter/202*/results.md
 cloudfunctions-tcb
 components/uni-*/
 unpackage
