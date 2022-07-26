@@ -9,3 +9,7 @@
 
 该app界面截图如下：
 https://github.com/enoughtallisymcrift/aUniappProject/wiki
+
+
+
+P.S. 硬件部分程序见另一个仓库anArduinoProject
