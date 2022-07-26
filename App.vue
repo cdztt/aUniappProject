@@ -8,7 +8,9 @@
 					create: true
 				}, () => {
 					console.log('成功创建文件夹')
-				}, () => { console.log('失败创建文件夹') })
+				}, () => {
+					console.log('失败创建文件夹')
+				})
 			}, () => { console.log('失败打开平板根目录') })
 		},
 		onShow: function() {

@@ -5,27 +5,28 @@
 			<text>
 				测试项目
 			</text>
-			<button
-			@click='navToOldSprint'>
+			<!-- <button
+			@click='navToOldSprint'
+			>
 				老50米
-			</button>
+			</button> -->
 			
 			<button
 			@click='navToSprint50'>
-				50米跑
+				短跑
 			</button>
 			
-			<button
+			<!-- <button
 			@click='navToSprint100'
 			disabled>
 				100米跑
-			</button>
+			</button> -->
 			
-			<button
+			<!-- <button
 			@click='navToSprint200'
 			disabled>
 				200米跑
-			</button>
+			</button> -->
 			<!-- <button
 			@click='navToFootball'>
 				足球
@@ -36,6 +37,7 @@
 				篮球
 			</button> -->
 		</view>
+		
 		<view class='home-entries'>
 			<uni-icons type="gear"></uni-icons>
 			<text>
@@ -46,10 +48,10 @@
 				上传文件(局域网)
 			</button>
 			
-			<button
+			<!-- <button
 			@click="navToUploadFilesViaCloud">
 				上传文件(云端)
-			</button>
+			</button> -->
 			
 			<!-- <button
 			@click="navToBLE"
@@ -79,12 +81,6 @@
 					url: '../uploadFilesViaCloud/index'
 				})
 			},
-			// //导航到新50米
-			// navToSprint50() {
-			// 	uni.navigateTo({
-			// 		url: '../newSprint/index'
-			// 	})
-			// },
 			//导航到新100米
 			navToSprint100() {
 				uni.navigateTo({
@@ -98,10 +94,10 @@
 				})
 			},
 			//创建各项目文件夹并导航
-			initDirectoryAndNavigate(fitnessItemName) {
+			initDirectoryNavigateTo(fitnessItemName) {
 				plus.io.resolveLocalFileSystemURL('/storage/emulated/0/-汇洋体测', entry => {
 					//新建测试项目文件夹
-					entry.getDirectory(fitnessItemMap.get(fitnessItemName).nameZH, {
+					entry.getDirectory(fitnessItemMap.get(fitnessItemName).nameZh, {
 						create: true
 					}, entry2 => {
 						//新建excel文件夹
@@ -109,7 +105,9 @@
 							create: true
 						}, () => {
 							console.log('成功新建导出文件夹')
-						}, () => { console.log('失败新建导出文件夹') })
+						}, () => {
+							console.log('失败新建导出文件夹')
+						})
 						//导航到测试项
 						uni.navigateTo({
 							url: `../testGroupSetting/index?fitnessItemName=${fitnessItemName}`
@@ -119,20 +117,20 @@
 			},
 			//导航到老50米
 			navToOldSprint() {
-				this.initDirectoryAndNavigate('oldSprint')
+				this.initDirectoryNavigateTo('oldSprint')
 			},
 			//导航到50米
 			navToSprint50() {
-				this.initDirectoryAndNavigate('sprint50')
+				this.initDirectoryNavigateTo('sprint50')
 			},
-			navToBLE() {
-				uni.navigateTo({
-					url: '../bluetooth/index'
-				})
-			},
+			// navToBLE() {
+			// 	uni.navigateTo({
+			// 		url: '../bluetooth/index'
+			// 	})
+			// },
 			//导航到足球
 			// navToFootball() {
-			// 	this.initDirectoryAndNavigate('football')
+			// 	this.initDirectoryNavigateTo('football')
 			// },
 			// navToBasketball() {
 				

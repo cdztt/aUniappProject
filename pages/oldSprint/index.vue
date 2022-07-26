@@ -175,10 +175,6 @@
 </template>
 
 <script>
-	import uniPopup from '@/components/uni-popup/uni-popup.vue'
-	import uniPopupDialog from '@/components/uni-popup/uni-popup-dialog.vue'
-	// import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue'
-	
 	import PeriTestList from '../../components/PeriTestList.vue'
 	import { Group, HandleHex } from '../../utils/Process.js'
 	import { waitTime } from '../../utils/waitTime.js'
@@ -197,9 +193,6 @@
 	export default {
 		components: {
 			PeriTestList,
-			uniPopup,
-			uniPopupDialog,
-			// uniPopupMessage
 		},
 		data() {
 			return {
@@ -248,6 +241,7 @@
 		onUnload() {
 			//卸载页面的时候断开连接
 			this.$socket.disconnect(this.channel)
+			this.$socket.receivedHexMsgCallBack = () => {}
 			this.forceQuit = true
 			this.clearScannerInterval()
 		},

@@ -6,7 +6,7 @@
 					v-if='header'>选择</text>
 				<radio
 					v-else
-					:value="group.groupID"
+					:value="group.groupId"
 					:checked="selected"></radio>
 			</view>
 			
@@ -17,7 +17,7 @@
 				</text>
 				<text :class="{'tgl-selected': selected}"
 					v-else>
-					{{group.groupID}}
+					{{group.groupId}}
 				</text>
 			</view>
 			

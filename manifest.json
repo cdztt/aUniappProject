@@ -20,8 +20,7 @@
         },
         /* 模块配置 */
         "modules" : {
-            "SQLite" : {},
-            "Bluetooth" : {}
+            "SQLite" : {}
         },
         /* 应用发布信息 */
         "distribute" : {
@@ -138,17 +137,17 @@
                     "parameters" : {}
                 }
             },
-            "replex-FileTools" : {
+            "XM-XlsOutput" : {
                 "__plugin_info__" : {
-                    "name" : "文件处理集成工具",
-                    "description" : "工具包集成图片、视频压缩相关，base64相关与压缩文件相关的工具",
+                    "name" : "Android导出数据到Excel表",
+                    "description" : "这是一款在uniapp中使用Android原生插件导出数据到excel文件中。使用简单，功能强大。",
                     "platforms" : "Android",
-                    "url" : "https://ext.dcloud.net.cn/plugin?id=1991",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=2482",
                     "android_package_name" : "run.hueyond.www",
                     "ios_bundle_id" : "",
                     "isCloud" : true,
                     "bought" : 1,
-                    "pid" : "1991",
+                    "pid" : "2482",
                     "parameters" : {}
                 }
             }

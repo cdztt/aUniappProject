@@ -13,6 +13,8 @@ const config = {
 	dialog:'center',
 	// 分享
 	share:'bottom',
+	calibrate: 'center',
+	setting: 'center'
 }
 
 export default {
