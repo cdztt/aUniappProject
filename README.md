@@ -8,3 +8,4 @@
 这个uniapp程序是2021年初所写，后面再无维护。这起初是个人项目，后来成为企业的演示项目（demo, prototype），最后用在了生产。
 
 该app界面截图如下：
+https://github.com/enoughtallisymcrift/aUniappProject/wiki
