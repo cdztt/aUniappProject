@@ -13,4 +13,5 @@ https://github.com/enoughtallisymcrift/aUniappProject/wiki
 
 P.S. 对应的硬件程序见另一个仓库`anArduinoProject`
 
-http://news.hsw.cn/system/2023/0424/1616547.shtml这条新闻上了百度热搜，文中那个华夏××是业内的一家公司。这么说吧，要改成绩真的太容易了。
+http://news.hsw.cn/system/2023/0424/1616547.shtml
+这条新闻上了百度热搜，文中那个华夏××是业内的一家公司。这么说吧，要改成绩真的太容易了。
